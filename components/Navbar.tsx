@@ -1,52 +1,62 @@
-"use client";
-import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
+'use client';
+import React, { useState } from 'react';
+import {
+  HoveredLink,
+  Menu,
+  MenuItem,
+  ProductItem,
+} from '@/components/ui/navbar-menu';
+import { cn } from '@/lib/utils';
+import Image from 'next/image';
+import { ModeToggle } from './dark-mode';
 
 export function Navbar({ className }: { className?: string }) {
-    const [active, setActive] = useState<string | null>(null);
+  const [active, setActive] = useState<string | null>(null);
 
-return (
-    <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
-        
-    <Menu setActive={setActive}>
+  return (
+    <div
+      className={cn('fixed top-10 inset-x-0 max-w-2xl mx-auto z-50', className)}
+    >
+      <Menu setActive={setActive}>
         <Image
-            src="/next.svg"
-            width={80}
-            height={80}
-            alt="Pituca logo"
-            />
+          className="w-8 h-8"
+          src="/next.svg"
+          width={80}
+          height={80}
+          alt="Pituca logo"
+          priority
+        />
         <MenuItem setActive={setActive} active={active} item="Home">
-        <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/">Home</HoveredLink>
-        </div>
+          </div>
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="Produtos">
-        <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/contact">Produtos</HoveredLink>
-        </div>
+          </div>
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="Sobre">
-        <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/sobre">Sobre</HoveredLink>
-        </div>
+          </div>
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="Contato">
-        <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/contato">Contato</HoveredLink>
-        </div>
+          </div>
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="FAQ">
-        <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/faq">FAQ</HoveredLink>
-        </div>
+          </div>
         </MenuItem>
-    </Menu>
+        <ModeToggle />
+      </Menu>
     </div>
-);
+  );
 }
