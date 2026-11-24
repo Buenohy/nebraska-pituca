@@ -1,5 +1,6 @@
 import HomeCarousel from '@/components/HomeCarousel';
 import { Navbar } from '@/components/Navbar';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -20,6 +21,34 @@ export default function Home() {
               desenvolvida com o carinho de quem entende de maternidade desde
               1970.
             </p>
+          </div>
+          <div className="flex gap-12">
+            <div>
+              <Image
+                className="rounded-4xl"
+                src="/card-home.jpg"
+                width={500}
+                height={500}
+                alt="Foto do perfil"
+              />
+            </div>
+            <div className="flex flex-col gap-5">
+              <h3 className="text-pituca-primary text-4xl font-bold">
+                Por que escolher a Pituca?
+              </h3>
+              <p className="text-pituca-tertiary">
+                Certificação ANVISA - Segurança total e conformidade com as
+                normas de saúde.
+              </p>
+              <p className="text-pituca-tertiary">
+                Livre de BPA (BPA Free) - Plásticos atóxicos pensados na saúde
+                do seu bebê.
+              </p>
+              <p className="text-pituca-tertiary">
+                Ergonomia e Conforto - Design desenhado para as mãozinhas
+                pequenas.
+              </p>
+            </div>
           </div>
         </div>
       </main>
