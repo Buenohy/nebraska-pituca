@@ -15,7 +15,7 @@ export function Navbar({ className }: { className?: string }) {
 
   return (
     <div
-      className={cn('fixed top-10 inset-x-0 max-w-2xl mx-auto z-50', className)}
+      className={cn('fixed top-10 inset-x-0 max-w-4xl mx-auto z-50', className)}
     >
       <Menu setActive={setActive}>
         <MenuItem
@@ -38,25 +38,25 @@ export function Navbar({ className }: { className?: string }) {
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="Home">
-          <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm text-pituca-quaternary">
             <HoveredLink href="/">Home</HoveredLink>
           </div>
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="Produtos">
-          <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm text-pituca-quaternary">
             <HoveredLink href="/contact">Produtos</HoveredLink>
           </div>
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="Sobre">
-          <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm text-pituca-quaternary">
             <HoveredLink href="/sobre">Sobre</HoveredLink>
           </div>
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="Contato">
-          <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm text-pituca-quaternary">
             <HoveredLink href="/contato">Contato</HoveredLink>
           </div>
         </MenuItem>
