@@ -59,7 +59,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-between">
-        <p className="text-pituca-white">Pituca é uma empresa NEBRASKA.</p>
+        <p className="text-pituca-white">
+          Pituca é uma empresa{' '}
+          <span className="text-pituca-secundary">NEBRASKA</span>.
+        </p>
         <p className="text-pituca-white">Todos os direitos reservados.</p>
       </div>
     </div>
