@@ -10,6 +10,7 @@
   --color-pituca-secundary: #f1bf18;
   --color-pituca-tertiary: #606266;
   --color-pituca-quaternary: #033775;
+  --color-pituca-white: #ffffff;
 }
 
 @theme inline {
