@@ -1,8 +1,15 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-pituca-background-white: #e6f2ff;
+  --color-pituca-primary: #1268a6;
+  --color-pituca-secundary: #f1bf18;
+  --color-pituca-tertiary: #606266;
+}
 
 @theme inline {
   --color-background: var(--background);
