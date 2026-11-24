@@ -1,3 +1,4 @@
+import { ButtonDefault } from '@/components/ButtonDefault';
 import HomeCarousel from '@/components/HomeCarousel';
 import { Navbar } from '@/components/Navbar';
 import { HandHeart, ShieldCheck, Sprout } from 'lucide-react';
@@ -100,7 +101,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center gap-5">
             <h3 className="text-pituca-primary text-4xl font-bold text-center">
               Cuidando do seu bebê em cada detalhe
             </h3>
@@ -108,6 +109,14 @@ export default function Home() {
               Conheça nossa linha completa de produtos ou fale com a nossa
               equipe.
             </p>
+            <div className="flex gap-7">
+              <ButtonDefault
+                text="Ver Produtos"
+                size="lg"
+                variant="secondary"
+              />
+              <ButtonDefault text="Fale conosco" size="lg" variant="default" />
+            </div>
           </div>
         </div>
       </main>
