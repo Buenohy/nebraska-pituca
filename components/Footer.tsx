@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone, Square } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export default function Footer() {
@@ -15,23 +16,45 @@ export default function Footer() {
           />
         </div>
         <div className="flex flex-col gap-2 items-center justify-center">
-          <p className="text-pituca-white">Nos siga no Instagram</p>
+          <Link
+            href="https://www.instagram.com/pitucababy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pituca-white hover:text-pituca-secundary"
+          >
+            Nos siga no Instagram
+          </Link>
           <Square className="w-8 h-8 text-pituca-secundary" />
         </div>
         <div className="flex flex-col items-center justify-center">
           <div className="flex gap-2 items-center justify-center">
             <Phone className="w-4 h-4 text-pituca-secundary" />
-            <p className="text-pituca-white">Telefone: (11) 4506-9199</p>
+            <a
+              href="tel:+551145069199"
+              className="text-pituca-white hover:text-pituca-secundary"
+            >
+              Telefone: (11) 4506-9199
+            </a>
           </div>
           <div className="flex gap-2 items-center justify-center">
             <Mail className="w-4 h-4 text-pituca-secundary" />
-            <p className="text-pituca-white">E-mail: contato@pituca.com.br</p>
+            <a
+              href="mailto:contato@pituca.com.br"
+              className="text-pituca-white hover:text-pituca-secundary"
+            >
+              E-mail: contato@pituca.com.br
+            </a>
           </div>
           <div className="flex gap-2 items-center justify-center">
             <MapPin className="w-4 h-4 text-pituca-secundary" />
-            <p className="text-pituca-white">
+            <Link
+              href="https://maps.app.goo.gl/PH52FSrAqDCgdULL9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pituca-white hover:text-pituca-secundary"
+            >
               Endereço: Ipiranga - São Paulo/SP
-            </p>
+            </Link>
           </div>
         </div>
       </div>
