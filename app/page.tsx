@@ -1,6 +1,5 @@
 import { ButtonDefault } from '@/components/ButtonDefault';
 import HomeCarousel from '@/components/HomeCarousel';
-import { Navbar } from '@/components/Navbar';
 import { HandHeart, ShieldCheck, Sprout } from 'lucide-react';
 import Image from 'next/image';
 
@@ -8,7 +7,6 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-7xl flex-col items-center justify-between py-8 px-16 bg-pituca-background-white dark:bg-black sm:items-start">
-        <Navbar />
         <div className="flex flex-col items-center justify-center gap-6 text-center">
           <HomeCarousel />
           <div className="flex flex-col gap-8 items-center justify-center text-center">
