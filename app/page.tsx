@@ -1,5 +1,6 @@
 import HomeCarousel from '@/components/HomeCarousel';
 import { Navbar } from '@/components/Navbar';
+import { HandHeart, ShieldCheck, Sprout } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Home() {
@@ -36,18 +37,27 @@ export default function Home() {
               <h3 className="text-pituca-primary text-4xl font-bold">
                 Por que escolher a Pituca?
               </h3>
-              <p className="text-pituca-tertiary">
-                Certificação ANVISA - Segurança total e conformidade com as
-                normas de saúde.
-              </p>
-              <p className="text-pituca-tertiary">
-                Livre de BPA (BPA Free) - Plásticos atóxicos pensados na saúde
-                do seu bebê.
-              </p>
-              <p className="text-pituca-tertiary">
-                Ergonomia e Conforto - Design desenhado para as mãozinhas
-                pequenas.
-              </p>
+              <div className="flex gap-3.5">
+                <ShieldCheck className="w-11 h-11 text-pituca-secundary" />
+                <p className="text-pituca-tertiary">
+                  Certificação ANVISA - Segurança total e conformidade com as
+                  normas de saúde.
+                </p>
+              </div>
+              <div className="flex gap-3.5">
+                <Sprout className="w-11 h-11 text-pituca-secundary" />
+                <p className="text-pituca-tertiary">
+                  Livre de BPA (BPA Free) - Plásticos atóxicos pensados na saúde
+                  do seu bebê.
+                </p>
+              </div>
+              <div className="flex gap-3.5">
+                <HandHeart className="w-11 h-11 text-pituca-secundary" />
+                <p className="text-pituca-tertiary">
+                  Ergonomia e Conforto - Design desenhado para as mãozinhas
+                  pequenas.
+                </p>
+              </div>
             </div>
           </div>
         </div>
